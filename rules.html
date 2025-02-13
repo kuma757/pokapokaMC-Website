@@ -31,6 +31,15 @@
             color: white;
             text-decoration: none;
         }
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
         .nav-links {
             display: flex;
             justify-content: center;
@@ -66,16 +75,43 @@
             padding: 15px;
         }
         @media (max-width: 600px) {
+            .menu-icon {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #444;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            .nav-links a {
+                display: block;
+                padding: 10px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
             .content {
                 padding: 15px;
                 width: 90%;
             }
         }
     </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
         <h1><a href="/home">pokapokaMC</a></h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <div class="nav-links">
             <a href="/home">ホーム</a>
             <a href="/rules">規約</a>
@@ -106,35 +142,29 @@
         <h1>条項の詳細</h1>
         <div class="matome2">
             <h2>第一条：運営やサーバー管理者の指示に従うこと</h2>
-            <p>
-                「運営」はpokapokaMCのスタッフ、「サーバー管理者」はサーバー主(@kuma)を指します。<br>
-                例えば、「すぐに退出してください」と指示があれば、従う必要があります。
-            </p>
+            <p>運営やサーバー管理者の指示には必ず従ってください。</p>
             <h2>第二条：他人の嫌がる行為の禁止</h2>
-            <p>
-                言動・行動・チャット含む全てが対象です。個別チャットも含まれます。<br>
-                例：差別、個人情報暴露、暴言、R18コンテンツ、スパムなど。
-            </p>
+            <p>言動・行動・チャットなど、他人が嫌がる行為はすべて禁止です。</p>
             <h2>第三条：バグ、不具合の使用・作成禁止</h2>
-            <p>サーバーのバグを利用・悪用する行為は禁止です。</p>
+            <p>バグを悪用する行為は禁止です。</p>
             <h2>第四条：サーバーへの攻撃禁止</h2>
-            <p>DDoS攻撃、ハッキングなどを含みます。</p>
+            <p>DDoS攻撃やハッキングなどの行為は禁止です。</p>
             <h2>第五条：宣伝行為、他サーバーへの勧誘の禁止</h2>
             <p>他のサーバーやサービスの宣伝は禁止です。</p>
             <h2>第六条：チート行為の禁止</h2>
-            <p>チートツール・MOD・リソースパックの使用禁止。ただし、見た目を変えるリソースパックは許可。</p>
+            <p>チートツールやMODの使用は禁止です。</p>
             <h2>第七条：サブアカウントの禁止</h2>
-            <p>正当な理由があれば許可される場合があります。問い合わせはチケットで。</p>
+            <p>正当な理由がある場合を除き、サブアカウントの使用は禁止です。</p>
             <h2>第八条：AFK行為の禁止</h2>
-            <p>10分間無操作で自動キック。AFK防止の操作は禁止。</p>
+            <p>10分間無操作で自動キックされます。</p>
             <h2>第九条：政治・宗教関連の発言禁止</h2>
-            <p>言葉の通りです。</p>
+            <p>政治や宗教に関する発言は禁止です。</p>
             <h2>第十条：有害コンテンツの送信禁止</h2>
-            <p>ウイルスや有害なファイルの送信禁止。</p>
+            <p>ウイルスや有害なファイルの送信は禁止です。</p>
             <h2>第十一条：管理者権限の不正使用禁止</h2>
-            <p>権限の取得、使用、付与は禁止。</p>
+            <p>権限の不正取得・使用は禁止です。</p>
             <h2>第十二条：荒らし行為の禁止</h2>
-            <p>他プレイヤーの建築破壊・アイテム盗難は禁止。</p>
+            <p>他プレイヤーの建築破壊やアイテム盗難は禁止です。</p>
         </div>
     </div>
 </body>

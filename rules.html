@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pokapokaMC-ホーム</title>
+    <title>pokapokaMC - サーバールール</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -22,161 +22,119 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             z-index: 1000;
         }
-        .navbar a {
+        .navbar h1 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar h1 a {
             color: white;
             text-decoration: none;
-            padding: 15px 25px;
-            display: inline-block;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
             font-weight: bold;
             transition: background 0.3s;
         }
-        .navbar a:hover {
+        .nav-links a:hover {
             background-color: #555;
             border-radius: 5px;
         }
         .content {
             margin-top: 80px;
             padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        .content h1 {
-            text-align: center;
-            color: #364e96;/*文字色*/
-            padding: 0.5em 0;/*上下の余白*/
-            border-top: solid 3px #364e96;/*上線*/
-            border-bottom: solid 3px #364e96;/*下線*/
+        h1, h2 {
+            color: #222;
         }
-
-        .matome p {
-            width: max-content;
-            margin: 10px auto;
-            font-weight: bold;
+        .matome, .matome2 {
+            padding: 15px;
         }
-
-        .matome h1 {
-            text-align: center;
-            color: #364e96;/*文字色*/
-            padding: 0.5em 0;/*上下の余白*/
-            border-top: solid 3px #364e96;/*上線*/
-            border-bottom: solid 3px #364e96;/*下線*/
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+                width: 90%;
+            }
         }
-
-        .matome2  {
-            width: max-content;
-            margin: 10px auto;
-            font-weight: bold;
-        }
-
-        .matome2 h1{
-            text-align: center;
-            color: #364e96;/*文字色*/
-            padding: 0.5em 0;/*上下の余白*/
-            border-top: solid 3px #364e96;/*上線*/
-            border-bottom: solid 3px #364e96;/*下線*/
-        }
-        .naver h1{
-            text-align: center;
-            font-weight: bold;
-            color: white;
-        }
-        
-        
     </style>
 </head>
 <body>
     <div class="navbar">
-        <h1>pokapokaMC</h1>
-        <a href="/home">ホーム</a>
-        <a href="/rules">規約</a>
-        <a href="http://25.ip.gl.ply.gg:18533/">マップ</a>
-        <a href="/wiki">Wiki</a>
-        <a href="/support">サポート</a>
+        <h1><a href="/home">pokapokaMC</a></h1>
+        <div class="nav-links">
+            <a href="/home">ホーム</a>
+            <a href="/rules">規約</a>
+            <a href="/test">マップ</a>
+            <a href="/wiki">Wiki</a>
+            <a href="/support">サポート</a>
+        </div>
     </div>
     <div class="content">
-        <h2>空間</h2>
-        <h1>全サーバー内規約(Discord・Minecraft内)</h1>
+        <h1>サーバー規約 (Minecraft & Discord)</h1>
         <div class="matome">
-        <p>
-        第一条：運営やSERVER管理者の指示などに従うこと<br>
-
-        第二条：相手の嫌がる行為の禁止<br>
-
-        第三条：バグ、不具合等の禁止<br>
-
-        第四条：サーバーに対する攻撃の禁止<br>
-        
-        第五条：宣伝行為、他サーバーへの勧誘の禁止<br>
-
-        第六条：チート行為の禁止<br>
-
-        第七条：サブアカウントの禁止<br>
-
-        第八条：AFK行為の禁止<br>
-
-        第九条：政治に関することや宗教の発言、表現の禁止<br>
-
-        第十条：有害なファイル、コンテンツの添付の禁止<br>
-
-        第十一条：管理者権限の獲得、使用、付与の禁止<br>
-
-        第十二条：荒らし行為の禁止<br>
-        <p>
+            <h2>基本ルール</h2>
+            <p>
+                第一条：運営やサーバー管理者の指示に従うこと<br>
+                第二条：他人が嫌がる行為の禁止<br>
+                第三条：バグや不具合の使用禁止<br>
+                第四条：サーバーへの攻撃行為禁止<br>
+                第五条：宣伝や勧誘の禁止<br>
+                第六条：チート行為の禁止<br>
+                第七条：サブアカウントの禁止<br>
+                第八条：AFK行為の禁止<br>
+                第九条：政治・宗教関連の発言禁止<br>
+                第十条：有害コンテンツの送信禁止<br>
+                第十一条：管理者権限の不正使用禁止<br>
+                第十二条：荒らし行為の禁止<br>
+            </p>
+        </div>
         <h1>条項の詳細</h1>
-            <div class="matome2">
-            <h2>第一条：運営やSERVER管理者の指示などに従うこと</h2>
-                「運営」とは、pokapokaMCのstaffのことを指します。<br>
-                「SERVER管理者」とは、pokapokaMCのサーバー主(@kuma)のことを指します。<br>
-                 例えば、「サーバーからすぐに退出してください。」と運営が指示したら、<br>
-                 それに従う必要があります。<br>     
+        <div class="matome2">
+            <h2>第一条：運営やサーバー管理者の指示に従うこと</h2>
+            <p>
+                「運営」はpokapokaMCのスタッフ、「サーバー管理者」はサーバー主(@kuma)を指します。<br>
+                例えば、「すぐに退出してください」と指示があれば、従う必要があります。
+            </p>
             <h2>第二条：他人の嫌がる行為の禁止</h2>
-    
-            「相手の嫌がる行為」は、表現、行動、チャットなども含みます。<br>
-             tellコマンド(個別チャット)なども第二条は、対象です。<br>
-             主に「相手の嫌がる行為」とは？<br>
-            ・差別<br>
-            ・個人情報全般(本人の同意が有無でも関わらず)<br>
-            ・暴言<br>
-            ・R18コンテンツ<br>
-            ・スパム<br>
-            ・ネガティブキャンペーン<br>
-        
-
-            <h2>第三条：バグ、不具合等の使用・作成の禁止</h2>
-            言葉の通りです。<br>
-
-            <h2>第四条：サーバーに対する攻撃の禁止</h2>
-            「サーバーに対する攻撃の禁止」とは、ddos攻撃やdos攻撃、ハッキングなどの<br>
-             ことを指します。<br>
-
+            <p>
+                言動・行動・チャット含む全てが対象です。個別チャットも含まれます。<br>
+                例：差別、個人情報暴露、暴言、R18コンテンツ、スパムなど。
+            </p>
+            <h2>第三条：バグ、不具合の使用・作成禁止</h2>
+            <p>サーバーのバグを利用・悪用する行為は禁止です。</p>
+            <h2>第四条：サーバーへの攻撃禁止</h2>
+            <p>DDoS攻撃、ハッキングなどを含みます。</p>
             <h2>第五条：宣伝行為、他サーバーへの勧誘の禁止</h2>
-            言葉の通りです。<br>
-
+            <p>他のサーバーやサービスの宣伝は禁止です。</p>
             <h2>第六条：チート行為の禁止</h2>
-           「チート」とは、チートツール、MOD、リソースパックのことを指します。<br>
-            例外：リソースパック（見た目を変えるもの）のみ、使用してもOKです。<br>
-            (透過などは除く)<br>
-
+            <p>チートツール・MOD・リソースパックの使用禁止。ただし、見た目を変えるリソースパックは許可。</p>
             <h2>第七条：サブアカウントの禁止</h2>
-            理由があれば、サブアカウントの使用も認められる場合があります。<br>
-            サブアカウントに対する問い合わせは、チケットでお願いします。<br>
-
+            <p>正当な理由があれば許可される場合があります。問い合わせはチケットで。</p>
             <h2>第八条：AFK行為の禁止</h2>
-            10分間無操作だと、自動でkickされます。<br>
-            なお、AFKを防止する行為は禁止されています。<br>
-
-            <h2>第九条：政治に関することや宗教の発言、表現の禁止</h2>
-            言葉の通りです。<br>
-
-            <h2>第十条：有害なファイル、コンテンツの添付の禁止</h2>
-            言葉の通りです。<br>
-
-            <h2>第十一条：不正な管理者権限の獲得、使用、付与の禁止</h2>
-            言葉の通りです。<br>
-
+            <p>10分間無操作で自動キック。AFK防止の操作は禁止。</p>
+            <h2>第九条：政治・宗教関連の発言禁止</h2>
+            <p>言葉の通りです。</p>
+            <h2>第十条：有害コンテンツの送信禁止</h2>
+            <p>ウイルスや有害なファイルの送信禁止。</p>
+            <h2>第十一条：管理者権限の不正使用禁止</h2>
+            <p>権限の取得、使用、付与は禁止。</p>
             <h2>第十二条：荒らし行為の禁止</h2>
-            主に「荒らし行為」とは？<br>
-            ・許可なく、他プレイヤーの建築を壊したり、アイテムを取る。<br>
-            </div>
+            <p>他プレイヤーの建築破壊・アイテム盗難は禁止。</p>
         </div>
     </div>
 </body>

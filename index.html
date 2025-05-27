@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CraftLand</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700"
+    />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="bg-[#121212] text-white font-['Spline_Sans','Noto_Sans',sans-serif]">
+    <div class="relative min-h-screen flex flex-col overflow-x-hidden">
+      <!-- 固定メニューバー -->
+      <header class="fixed top-0 left-0 right-0 z-50 bg-[#1e1e1e] flex items-center justify-between border-b border-[#2a2a2a] px-10 py-3">
+        <a href="#" class="flex items-center gap-4 text-white hover:text-gray-300 transition-colors">
+          <div class="w-10 h-10">
+            <img class="fit-picture" src="images/5.png" />
+              <g clip-path="url(#clip0_6_535)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                  fill="currentColor"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_535">
+                  <rect width="48" height="48" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <h2 class="text-lg font-bold tracking-[-0.015em]">PokapokaMC</h2>
+        </a>
+        <div class="flex gap-8 items-center">
+          <nav class="flex gap-9 text-sm font-medium">
+            <a href="/index" class="text-white hover:text-gray-300 transition-colors">ホーム</a>
+            <a href="/wiki" class="text-white hover:text-gray-300 transition-colors">Wiki</a>
+          </nav>
+          <a href="map.pokapokamc.f5.si:26627" class="h-10 px-4 rounded-full bg-green-600 hover:bg-blue-700 active:bg-blue-800 text-white text-sm font-bold transition-colors flex items-center justify-center">Webmapを開く</a>
+          <a href="https://discord.gg/fyVBynamBd" class="h-10 px-4 rounded-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-sm font-bold transition-colors flex items-center justify-center">Discordに参加する</a>
+
+        </div>
+      </header>
+
+      <!-- メイン -->
+      <main class="pt-[72px] flex-1 px-40 py-5">
+        <div class="max-w-[960px] mx-auto">
+          <!-- ヒーロー -->
+          <section class="p-4 rounded-xl bg-cover bg-center bg-no-repeat text-center flex flex-col items-center justify-center min-h-[480px]"
+            style='background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/pokapoka.png");'>
+            <h1 class="text-white text-5xl font-black tracking-tight">ようこそ PokapokaMC へ</h1>
+            <p class="text-white text-base font-normal mt-2">
+              ぜひ、新しくできたEarthサーバーに入ってみませんか？
+            </p>
+            <a href="https://discord.gg/fyVBynamBd" class="mt-6 h-12 px-5 rounded-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-base font-bold transition-colors flex items-center justify-center">Discordに参加する</a>
+
+          </section>
+
+          <section class="pt-10 px-4">
+            <h2 class="text-[22px] font-bold tracking-tight pb-3">サーバーの特徴</h2>
+            <div class="space-y-2">
+              <label class="flex items-center gap-3">
+                <input type="checkbox" disabled checked class="h-5 w-5 rounded border-[#444] bg-transparent text-blue-500 checked:bg-blue-600 checked:border-blue-600" />
+                <span class="text-base text-white">24時間 サーバー解放</span>
+              </label>
+              <label class="flex items-center gap-3">
+                <input type="checkbox" disabled checked class="h-5 w-5 rounded border-[#444] bg-transparent text-blue-500 checked:bg-blue-600 checked:border-blue-600" />
+                <span class="text-base text-white">定期的なイベントの開催</span>
+              </label>
+              <label class="flex items-center gap-3">
+                <input type="checkbox" disabled checked class="h-5 w-5 rounded border-[#444] bg-transparent text-blue-500 checked:bg-blue-600 checked:border-blue-600" />
+                <span class="text-base text-white">運営が優しくサポート</span>
+              </label>
+              <label class="flex items-center gap-3">
+                <input type="checkbox" disabled checked class="h-5 w-5 rounded border-[#444] bg-transparent text-blue-500 checked:bg-blue-600 checked:border-blue-600" />
+                <span class="text-base text-white">"ユーザー"の意見を尊重する</span>
+              </label>
+            </div>
+          </section>
+
+<section class="pt-10">
+  <h2 class="text-[22px] font-bold tracking-tight px-4 pb-3">サーバーの遊び方</h2>
+  <div class="space-y-6 px-4">
+
+    <!-- Java版 -->
+    <div class="bg-[#1e1e1e] p-4 rounded-xl border border-[#2a2a2a]">
+      <h3 class="text-lg font-bold text-white mb-2">💻 Java版</h3>
+      <div class="flex flex-col sm:flex-row items-stretch gap-3">
+        <input id="java-ip" type="text" readonly value="play.pokapokamc.f5.si:2028"
+          class="flex-1 bg-[#2a2a2a] text-white text-sm px-4 py-2 rounded-lg border border-[#444] focus:outline-none cursor-default" />
+        <button onclick="copyToClipboard('java-ip')"
+          class="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors">
+          コピー
+        </button>
+      </div>
+    </div>
+
+    <!-- 統合版 -->
+    <div class="bg-[#1e1e1e] p-4 rounded-xl border border-[#2a2a2a]">
+      <h3 class="text-lg font-bold text-white mb-2">📱 統合版 (スマホ/スイッチなど)</h3>
+      <div class="space-y-3">
+        <div class="flex flex-col sm:flex-row items-stretch gap-3">
+          <label for="bedrock-ip" class="text-sm text-white sm:w-16">IP</label>
+          <input id="bedrock-ip" type="text" readonly value="play.pokapokamc.f5.si"
+            class="flex-1 bg-[#2a2a2a] text-white text-sm px-4 py-2 rounded-lg border border-[#444] focus:outline-none cursor-default" />
+          <button onclick="copyToClipboard('bedrock-ip')"
+            class="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors">
+            コピー
+          </button>
+        </div>
+        <div class="flex flex-col sm:flex-row items-stretch gap-3">
+          <label for="bedrock-port" class="text-sm text-white sm:w-16">ポート</label>
+          <input id="bedrock-port" type="text" readonly value="1293"
+            class="flex-1 bg-[#2a2a2a] text-white text-sm px-4 py-2 rounded-lg border border-[#444] focus:outline-none cursor-default" />
+          <button onclick="copyToClipboard('bedrock-port')"
+            class="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors">
+            コピー
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- トースト通知 + コピー機能 -->
+<style>
+  #toast {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 14px;
+    z-index: 1000;
+    animation: fadeInOut 3s forwards;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+<div id="toast">コピーしました！</div>
+
+<script>
+  function copyToClipboard(id) {
+    const input = document.getElementById(id);
+    input.select();
+    input.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(input.value).then(() => {
+      const toast = document.getElementById("toast");
+      toast.style.display = "block";
+      toast.style.animation = "fadeInOut 3s forwards";
+      setTimeout(() => {
+        toast.style.display = "none";
+      }, 3000);
+    });
+  }
+</script>
+
+          
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <footer class="bg-gray-900 text-gray-400 text-sm text-center py-6 mt-10">
+  <p class="mb-1">
+    "Minecraft" is a trademark of Mojang Synergies AB. This site and server are not affiliated with Mojang Synergies AB.
+  </p>
+  <p>
+    © 2025 PokapokaMC. 無断転載を禁じます。
+  </p>
+</footer>
+</html>
